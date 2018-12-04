@@ -1,4 +1,4 @@
-class WsauthorsControllerController < ApplicationController
+class WsauthorsController < ApplicationController
     before_action :set_author, only: [:show, :update, :destroy]
     
     soap_service namespace: 'urn:WashOutAuthors', camelize_wsdl: :lower
