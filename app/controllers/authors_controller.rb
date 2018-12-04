@@ -41,7 +41,7 @@ class AuthorsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_author
-      @author = Author.where(username: params[:id])
+      @author = Author.where(username: params[:username])
     end
 
     # Only allow a trusted parameter "white list" through.
